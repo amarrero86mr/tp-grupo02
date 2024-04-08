@@ -1,0 +1,22 @@
+/* partials css */
+@import url(./part/recet.css);
+@import url(./part/root.css);
+
+
+/* partials: header y footer css */
+
+@import url(./part/header.css);
+@import url(./part/footer.css);
+
+
+/* pages */
+
+@import url(./pags/admin.css);
+@import url(./pags/cart.css);
+@import url(./pags/contacto.css);
+@import url(./pags/home.css);
+@import url(./pags/item.css);
+@import url(./pags/login.css);
+@import url(./pags/mercado.css);
+@import url(./pags/nosotros.css);
+@import url(./pags/registro.css);
