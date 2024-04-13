@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | tradicion criolla</title>
+    <link rel="stylesheet" href="../styles/pags/contacto.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div>
+                <a href="../index.html"><img width="150px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                        alt="Logo de Tradición Criolla"></a>
+            </div>
+            <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
+            <div hidden>
+                <label for="check-menu-responsiv" class="checkbtn-menu-responsiv">
+                    <img class="img-menu-responsiv" src="/public/images/icons/menu-circle-fill.svg"
+                        alt="favicon de menu">
+                </label>
+                <input type="checkbox" id="check-menu-responsiv">
+
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">MERCADO</a> <img width="20px" src="../imgs/icons/chevron-down-solid.svg"
+                            alt="icono de flecha abajo"></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">INGRESAR</a></li>
+                    <li><a href="#"><img width="40px" src="../imgs/icons/cart-shopping-solid.svg"
+                                alt="favicon de carrito de compras"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section fin semantico para busqueda de google -->
+        <section id="title">
+            <h2>Contacto</h2>
+            <p>Deja tu comentario o consulta llenando el formulario</p>
+            <div class="form-contact">
+                <form action="">
+                    <p>
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    </p>
+                    <p>
+                        <input type="text" name="apelldio" id="apelldio" placeholder="apell">
+                    </p>
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </p>
+                    <p>
+                        <input type="tel" name="telefono" id="telefono" placeholder="telefono">
+                    </p>
+                    <p>
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">enviar</button>
+                    </p>
+                </form>
+            </div>
+            <p>
+                Tambien puedes comunicarse por los siguientes canales y redes sociales o visitarnos
+                en nuestra sucursal
+            </p>
+            <div class="contacto">
+                <p>
+                    Av.Corrientes, C1043 Cdad. Autonoma de Buenos Aires
+                </p>
+                <p>
+                    consultas.tciolla@t.cruiolla.com
+                </p>
+                <p>
+                    +54 9 11 12345678
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
