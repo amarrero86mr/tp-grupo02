@@ -1,0 +1,42 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    margin: 1.8em;
+    font-family: var(--title-font);
+    font-size: 3em;
+    text-decoration: underline 3px var(--primary-solid);
+    text-underline-position: under;
+}
+
+.Nosotros__section {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 5em;
+}
+
+.Nosotros__section>div>p {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    font-weight: 500;
+    padding: 1.8em;
+    border: solid 3px var(--secondary-solid);
+    border-radius: 3em;
+    line-height: 1.5em;
+}
+
+.Nosotros__section>div:nth-child(2){
+    text-align: right;
+}
+
+.Nosotros__section>div>img {
+    max-width: 60em;
+    border-radius: 1em;
+}
+
+
