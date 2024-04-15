@@ -1,0 +1,24 @@
+:root{
+    --bg-color: #D8DBB5;
+}
+
+.form-contact *{
+    border-radius: 7px;
+    /* border-width: 1px; */
+    text-transform: uppercase;
+    /* display: flex; */
+}
+
+input{
+    background-color: var(--bg-color);
+    padding: 5px 10px;
+    border: 1px solid;
+
+}
+
+textarea{
+    background-color: var(--bg-color);
+    padding: 5px 10px;
+    border: 1px solid;
+}
+
