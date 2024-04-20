@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
 </head>
 <body class="container">
-    <header class="">
+    <header >
         <nav>
             <div>
                 <a href="../index.html"><img width="150px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png" alt="Logo de Tradición Criolla"></a>
@@ -64,29 +64,20 @@
             </div>
         </section>
         <section class="section__marcas">
-            <!-- este sera un slider animado sin enlaces, por ahora es estatico -->
-            <div>
-                <img width="40px" src="../imgs/icons/chevron-left-solid.svg" alt="favicon flecha izquierda">
-            </div>
-            <div>
-                <img src="../imgs/logo/marcas/logo-amanda-250x150.png" alt="logo amanda">
-            </div>
-            <div>
-                <img src="../imgs/logo/marcas/logo-artentino-250x150.png" alt="logo artentino">
-            </div>
-            <div>
-                <img src="../imgs/logo/marcas/logo-buenacepa-250x150.png" alt="logo buena cepa">
-            </div>
-            <div>
-                <img src="../imgs/logo/marcas/logo-canarias-250x150.png" alt="logo canarias">
-            </div>
-            <div>
-                <img src="../imgs/logo/marcas/logo-chuna-250x150.png" alt="logo chuna">
-            </div>
-            <!-- faltan varios mas -->
-            <div>
-                <img width="40px" src="../imgs/icons/chevron-right-solid.svg" alt="favicon flecha derecha">
-            </div>
+            <!-- este sera un slider , por ahora es estatico -->
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="../imgs/logo/marcas/logo-amanda-250x150.png" alt="logo amanda"></li>
+                    <li class="glide__slide"><img src="../imgs/logo/marcas/logo-artentino-250x150.png" alt="logo artentino"></li>
+                    <li class="glide__slide"><img src="../imgs/logo/marcas/logo-buenacepa-250x150.png" alt="logo buena cepa"></li>
+                    <li class="glide__slide"><img src="../imgs/logo/marcas/logo-canarias-250x150.png" alt="logo canarias"></li>
+                    <li class="glide__slide"><img src="../imgs/logo/marcas/logo-chuna-250x150.png" alt="logo chuna"></li>
+                    
+                  </ul>
+                </div>
+                
+            </div>               
         </section>
         <article>
             <ul class="section__redes">
@@ -109,5 +100,26 @@
         </div>
         <p>Derechos Registrados 2024 - tradición criolla®</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        let opcionesGlide = {
+            type: 'carousel',
+            startAt: 1,
+            perView: 5,
+            autoplay:1500,
+            hoverpause: true,
+            gap: 20,
+            breakpoints: {
+                780: {
+                    perView:3
+                },
+                400: {
+                  perView: 2
+                },
+            }
+        }
+        new Glide('.glide', opcionesGlide).mount()
+      </script>
 </body>
 </html>

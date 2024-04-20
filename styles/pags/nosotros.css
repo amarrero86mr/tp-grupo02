@@ -98,18 +98,15 @@
 }
 
 .section__marcas{
-    margin: 3em 0;
-    max-height: 15em;
     width: 1200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    margin: 2.5em auto;
+}
+.glide__slides{
+    margin: 0;
+    justify-content: start;
 }
 
-.section__marcas>div>img {
-    max-width: 20em;
-}
+
 
 .section__redes {
     display: flex;
