@@ -106,16 +106,8 @@
     justify-content: start;
 }
 
-
-
 .section__redes {
     display: flex;
     gap: 2.5em;
     justify-content: center;
-}
-
-/* quitar luego de realizar los partial de header & footer */
-
-header, footer {
-    background-image: linear-gradient(#81844D, #6C4446);
 }
