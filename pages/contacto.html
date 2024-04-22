@@ -41,31 +41,35 @@
     <main>
         <!-- section fin semantico para busqueda de google -->
         <section id="title">
-            <h2>Contacto</h2>
-            <p>Deja tu comentario o consulta llenando el formulario</p>
-            <div class="form-contact">
-                <form action="">
-                    <div class="form__names">
+            <div class="head">
+                <h2>Contacto</h2>
+                <p>Deja tu comentario o consulta llenando el formulario</p>
+            </div>
+            <form action="">
+                <div class="form-contact">
+                    <div class="form__name">
                         <input type="text" name="nombre" id="nombre" placeholder="nombre">
-
+                    </div>
+                    <div class="form__apellido">
                         <input type="text" name="apellido" id="apellido" placeholder="apellido">
                     </div>
-                    <div class="form__datos_contact">
+                    <div class="form__dato_email">
                         <input type="email" name="email" id="email" placeholder="email">
-
+                    </div>
+                    <div class="form__dato_telefono">
                         <input type="tel" name="telefono" id="telefono" placeholder="telefono">
                     </div>
                     <div class="form_mensaje">
-                        <label for="mensaje"></label>
+                        <!-- <label for="mensaje"></label> -->
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
                     </div>
-                    <p>
+                    <div class="button_send">
                         <button type="submit">enviar</button>
-                    </p>
-                </form>
-            </div>
+                    </div>
+                </div>
+            </form>
             <div class="textos-cantacto">
-                <p >
+                <p>
                     Tambien puedes comunicarse por los siguientes canales y redes sociales o visitarnos
                     en nuestra sucursal
                 </p>
