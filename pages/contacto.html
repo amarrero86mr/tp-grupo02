@@ -5,33 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | tradicion criolla</title>
+    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/pags/contacto.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
 </head>
 
-<body>
-    <header class="header">
-        <nav>
-            <div>
+<body class="container">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
                 <a href="../index.html"><img width="150px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
                         alt="Logo de Tradición Criolla"></a>
             </div>
             <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
-            <div hidden>
-                <label for="check-menu-responsiv" class="checkbtn-menu-responsiv">
-                    <img class="img-menu-responsiv" src="/public/images/icons/menu-circle-fill.svg"
-                        alt="favicon de menu">
+            <div class="navbar__menu">
+                <label for="check-menu-responsive" class="checkbtn-menu-responsive">
+                    <img class="img-menu-responsive" width="45px" src="../imgs/icons/bars-solid.svg" alt="favicon de menu">
                 </label>
-                <input type="checkbox" id="check-menu-responsiv">
-
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">MERCADO</a> <img width="20px" src="../imgs/icons/chevron-down-solid.svg"
-                            alt="icono de flecha abajo"></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><a href="#">INGRESAR</a></li>
-                    <li><a href="#"><img width="40px" src="../imgs/icons/cart-shopping-solid.svg"
+                <input hidden type="checkbox" id="check-menu-responsive">
+    
+                <ul class="navbar__menu-list">
+                    <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img width="20px"
+                            src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
+                        <ul class="submenu">
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Yerbas</a>
+                            </li>
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Mates</a>
+                            </li>
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Termos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__menu-item"><a href="#">CONTACTO</a></li>
+                    <li class="navbar__menu-item"><a href="#">INGRESAR</a></li>
+                    <li class="navbar__menu-item"><a href="#"><img width="40px" src="../imgs/icons/cart-shopping-solid.svg"
                                 alt="favicon de carrito de compras"></a></li>
                 </ul>
             </div>
