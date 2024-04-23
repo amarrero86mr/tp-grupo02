@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | tradicion criolla</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/pags/contacto.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
+</head>
+
+<body class="container">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="../index.html"><img width="150px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                        alt="Logo de Tradición Criolla"></a>
+            </div>
+            <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
+            <div class="navbar__menu">
+                <label for="check-menu-responsive" class="checkbtn-menu-responsive">
+                    <img class="img-menu-responsive" width="45px" src="../imgs/icons/bars-solid.svg" alt="favicon de menu">
+                </label>
+                <input hidden type="checkbox" id="check-menu-responsive">
+    
+                <ul class="navbar__menu-list">
+                    <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img width="20px"
+                            src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
+                        <ul class="submenu">
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Yerbas</a>
+                            </li>
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Mates</a>
+                            </li>
+                            <li class="submenu__items">
+                                <a href="#" class="submenu__link">Termos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__menu-item"><a href="#">CONTACTO</a></li>
+                    <li class="navbar__menu-item"><a href="#">INGRESAR</a></li>
+                    <li class="navbar__menu-item"><a href="#"><img width="40px" src="../imgs/icons/cart-shopping-solid.svg"
+                                alt="favicon de carrito de compras"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section fin semantico para busqueda de google -->
+        <section id="title">
+            <div class="head">
+                <h2>Contacto</h2>
+                <p>Deja tu comentario o consulta llenando el formulario</p>
+            </div>
+            <form action="">
+                <div class="form-contact">
+                    <div class="form__name">
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    </div>
+                    <div class="form__apellido">
+                        <input type="text" name="apellido" id="apellido" placeholder="apellido">
+                    </div>
+                    <div class="form__dato_email">
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </div>
+                    <div class="form__dato_telefono">
+                        <input type="tel" name="telefono" id="telefono" placeholder="telefono">
+                    </div>
+                    <div class="form_mensaje">
+                        <!-- <label for="mensaje"></label> -->
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    </div>
+                    <div class="button_send">
+                        <button type="submit">enviar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="textos-cantacto">
+                <p>
+                    Tambien puedes comunicarse por los siguientes canales y redes sociales o visitarnos
+                    en nuestra sucursal
+                </p>
+
+                <ul class="contacto">
+                    <li>
+                        <!-- cargar las imagenes -->
+                        Av.Corrientes, C1043 Cdad. Autonoma de Buenos Aires
+                    </li>
+                    <li>consultas.tcriolla@tcriolla.com</li>
+                    <li>+54 9 11 12345678</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

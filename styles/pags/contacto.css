@@ -1,0 +1,56 @@
+:root {
+    --bg-color: #D8DBB5;
+    --bg-button-color: #7ED957;
+}
+
+.head {
+    margin: 0 6vw;
+}
+
+.form-contact {
+    display: grid;
+    margin: 2vw;
+
+    grid-template-columns: repeat(2, minmax(0, 500px));
+    gap: 1em;
+    /* Espaciado entre las columnas y filas */
+
+    justify-content: center;
+
+}
+
+
+/* Estilos para los inputs */
+
+input,
+textarea {
+    background-color: var(--bg-color);
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    text-transform: capitalize;
+    width: calc(100% - 20px);
+    /* Ancho del input, descontando el padding */
+    font-size: 1.2em;
+}
+
+.form_mensaje {
+    grid-column-start: 2 span;
+    /* grid-column-end: 3; */
+
+}
+
+button {
+    background-color: var(--bg-button-color);
+    border: 0px;
+    border-radius: 7px;
+    width: 70px;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+@media(width < 480px) {
+    .form-contact {
+        flex-direction: row-gap;
+    }
+}
