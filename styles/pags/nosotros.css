@@ -4,7 +4,7 @@
 }
 
 .hero__title {
-    margin: 5vw;
+    margin: 3vw;
     font-family: var(--title-font);
     font-size: 3em;
     text-decoration: underline 3px var(--primary-solid);
