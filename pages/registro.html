@@ -41,9 +41,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="navbar__menu-item"><a href="#">CONTACTO</a></li>
-                        <li class="navbar__menu-item"><a href="#">INGRESAR</a></li>
-                        <li class="navbar__menu-item"><a href="#"><img width="40px"
+                        <li class="navbar__menu-item"><a href="./contacto.html">CONTACTO</a></li>
+                        <li class="navbar__menu-item"><a href="./login.html">INGRESAR</a></li>
+                        <li class="navbar__menu-item"><a href="./cart.html"><img width="40px"
                                     src="../imgs/icons/cart-shopping-solid.svg" alt="favicon de carrito de compras"></a>
                         </li>
                     </ul>
@@ -52,16 +52,16 @@
         </header>
 
         <main>
-            <section>
-                <h1>REGISTRO</h1>
+            <section class="hero">
+                <h1 class="hero__title">REGISTRO</h1>
                 <p>Registrate y fomá parte de la familia de tradicion criolla</p>
             </section>
             <section>
-                <h2>Datos de Contacto</h2>
+                <h2 class="hero__title title__secondary">Datos de Contacto</h2>
                 <!-- faltan los patterns t los requiereds -->
                 <!-- <form action="https://formspree.io/f/xrgndeyq" method="POST"> -->
-                <form action="" method="POST">
-                    <fieldset class="form_primerseccion">
+                <form action="" method="POST" class="form__registro">
+                    <!-- <fieldset class="form_primerseccion"> -->
                         <div class="form__name">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombres">
                         </div>
@@ -133,8 +133,8 @@
                         <div class="form__cpostal">
                             <input type="number" name="cpostal" id="cpostal" placeholder="Código Postal">
                         </div>
-                    </fieldset>
-                    <fieldset class="form_segundaseccion">
+                    <!-- </fieldset> -->
+                    <!-- <fieldset class="form_segundaseccion"> -->
                         <div class="form__telefono">
                             <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
                         </div>
@@ -153,17 +153,16 @@
                             <input type="password" name="re_pass" id="re_pass" placeholder="Repita su Contraseña">
                         </div>
 
-                        <div class="form_acept">
+                        <div class="form__acept">
                             <input type="checkbox" id="acept_terminos">
                             <label for="acept_terminos">ACEPTO LOS <a href="#">TERMINOS Y CONDICIONES</a></label>
                         </div>
-                    </fieldset>
-                    <div class="button_send">
-                        <button type="submit">enviar</button>
-                    </div>
-                    <div class="button_borrar">
-                        <button type="reset">borrar</button>
-                    </div>
+                        <div class="button__section">
+                            <button class="button_send" type="submit">REGISTRARSE</button>
+                            
+                            <button class="button_borrar" type="reset">BORRAR</button>
+                        </div>
+                    <!-- </fieldset> -->
                 </form>
             </section>
 
