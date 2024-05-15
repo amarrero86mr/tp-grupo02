@@ -3,51 +3,89 @@
     --bg-button-color: #7ED957;
 }
 
-.head {
-    margin: 0 6vw;
+.container,
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 1.8em;
+    font-family: var(--title-font);
+    font-size: 3em;
+    text-decoration: underline 3px var(--primary-solid);
+    text-underline-position: under;
+
+}
+
+.hero>div>p {
+    font-family: var(--primary-font);
+    font-size: 2.1em;
+    font-weight: 500;
+    margin: 1.8em;
 }
 
 .form-contact {
     display: grid;
     margin: 2vw;
-
+    
     grid-template-columns: repeat(2, minmax(0, 500px));
-    gap: 1em;
-    /* Espaciado entre las columnas y filas */
-
+    grid-template-rows: auto auto auto auto;
+    gap: 0em 7em;
+    
     justify-content: center;
-
 }
 
+/* Establece el ancho de todos los inputs y textarea al 100% */
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.form-contact > .form_mensaje{
+    grid-column: span 2;
+    grid-row: 3; /*ubicamos en la 3era fila*/
+}
+
+input,button{
+    height: 38px;
+}
 
 /* Estilos para los inputs */
-
 input,
 textarea {
     background-color: var(--bg-color);
     padding: 5px 10px;
     border: 1px solid;
-    border-radius: 7px;
+    border-radius: 10px;
     text-transform: capitalize;
     width: calc(100% - 20px);
     /* Ancho del input, descontando el padding */
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .form_mensaje {
     grid-column-start: 2 span;
     /* grid-column-end: 3; */
-
 }
 
 button {
     background-color: var(--bg-button-color);
     border: 0px;
-    border-radius: 7px;
-    width: 70px;
-    height: 30px;
-    font-size: 1.2em;
+    border-radius: 17px;
+    width: 130px;
+    /* height: 30px; */
+    font-size: 2em;
+    text-transform: uppercase;
 }
+
+.button_send{
+    /* Alinea el botón al final de la columna */
+    grid-column: 2;
+    justify-self: end;
+}
+
 
 @media(width < 480px) {
     .form-contact {
