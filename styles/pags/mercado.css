@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #d8dbb5;
+  --bg-button-color: #7ed957;
+}
+
+.head {
+  margin: 0 6vw;
+}
+
+.hero__title {
+  margin: 5vw;
+  font-family: var(--title-font);
+  font-size: 3em;
+  text-decoration: underline 3px var(--primary-solid);
+  text-underline-position: under;
+}
+
+.section__redes {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: inherit;
+  padding-top: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+input,
+textarea {
+  background-color: var(--bg-color);
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 7px;
+  text-transform: capitalize;
+  width: calc(100% - 20px);
+  /* Ancho del input, descontando el padding */
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+}
+
+span {
+  text-decoration: underline;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: var(--bg-button-color);
+  border: 0px;
+  border-radius: 7px;
+  width: auto;
+  height: 30px;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+@media (width < 480px) {
+  .form-login {
+    flex-direction: row-gap;
+  }
+}
