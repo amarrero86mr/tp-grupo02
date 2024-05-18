@@ -113,6 +113,7 @@ color: var(--primary-solid);
 
 .glide {
     height: 430px;
+    margin-bottom: 8vw;
 }
 .glide__track{
     margin: 0 70px;
