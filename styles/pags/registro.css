@@ -44,7 +44,6 @@ option {
     padding: 5px 10px;
     border: 1px solid var(--form-border);
     border-radius: 12px;
-    text-transform: capitalize;
     width: 100% ;
     /* Ancho del input, descontando el padding */
     height: 5vh;
@@ -74,7 +73,6 @@ label {
 }
 .form__Genero>input, .form__Genero>label{
     height: 20px;
-
 }
 /* .form__provincia{}
 .form_ciudad{}
@@ -129,9 +127,6 @@ input[type=radio]:checked {
     background-color: var(--secondary-solid);
 }
 
-
-
-
 #acept_terminos{
     appearance: none;
     border-radius: 5px;
@@ -142,10 +137,6 @@ input[type=radio]:checked {
     background-size: cover;
     background-position: center;    
 }
-
-
-
-
 
 .button__section{
     display: flex;
@@ -179,6 +170,15 @@ button:hover {
     color: var(--form-back);
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #fc2e2e;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
 @media (max-width: 768px) {
     .form__Genero {
         margin: 2vw 0;
@@ -187,7 +187,6 @@ button:hover {
         gap: 0;
     }
 }
-
 
 @media (max-width: 480px) {
     .form__registro {
