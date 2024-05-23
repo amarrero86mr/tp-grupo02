@@ -101,7 +101,7 @@ color: var(--primary-solid);
 .section__artnuevos {
     margin: 5vw 2vw;
 }
-.section__artnuevos>h2 {
+h2 {
     font-family: var(--title-font);
     font-size: 5em;
     color: var(--primary-solid);
