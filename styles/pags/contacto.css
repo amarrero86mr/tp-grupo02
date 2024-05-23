@@ -18,7 +18,7 @@ body {
 
 }
 
-.hero>div>p {
+p {
     font-family: var(--primary-font);
     font-size: 2.1em;
     font-weight: 500;
@@ -28,11 +28,11 @@ body {
 .form-contact {
     display: grid;
     margin: 2vw;
-    
+
     grid-template-columns: repeat(2, minmax(0, 500px));
     grid-template-rows: auto auto auto auto;
     gap: 0em 7em;
-    
+
     justify-content: center;
 }
 
@@ -43,12 +43,14 @@ body {
     margin: 10px 0px;
 }
 
-.form-contact > .form_mensaje{
+.form-contact>.form_mensaje {
     grid-column: span 2;
-    grid-row: 3; /*ubicamos en la 3era fila*/
+    grid-row: 3;
+    /*ubicamos en la 3era fila*/
 }
 
-input,button{
+input,
+button {
     height: 38px;
 }
 
@@ -80,15 +82,30 @@ button {
     text-transform: uppercase;
 }
 
-.button_send{
+.button_send {
     /* Alinea el botón al final de la columna */
     grid-column: 2;
     justify-self: end;
 }
 
+.contacto>li {
+    display: flex;
+}
+
+.contacto>li>img {
+    width: 4em;
+}
+
+.section__redes {
+
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
 
 @media(width < 480px) {
     .form-contact {
-        flex-direction: row-gap;
+        display: flex;
+        flex-direction: column;
     }
 }
