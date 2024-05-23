@@ -3,10 +3,11 @@ header {
     font-weight: 800;
     font-size: 2.7em;
 }
+
 nav {
     background-image: linear-gradient( var(--brown-mate-solid), var(--green-yerba-solid));
     display: flex;
-    padding: 1.3em;
+    padding: 1vw 2vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -16,8 +17,8 @@ nav {
 
 .navbar__menu-item {
     display: inline-block;
-    padding: 0.7em;
-    border-radius: 0.5em;
+    padding: 0.7vw;
+    border-radius: 0.7vw;
     transition: all 0.4s ease;
 }
 
@@ -30,7 +31,7 @@ nav {
 .submenu {
     display: none;
     position:fixed;
-    margin-top: 0.7em;
+    margin-top: 10px;
     transition: all 1s ease;
 }
 
@@ -46,6 +47,23 @@ nav {
 }
 .submenu__items:hover {
     background-color: var(--secondary-07);
+}
+
+.navbar__logo>a>img {
+    width: 150px;
+}
+
+.img-menu-responsive{
+    width: 40px;
+}
+.con__submenu>img {
+    width: 20px;
+}
+.navbar__menu-item>a>img {
+    width: 40px;
+}
+.section__redes>li>a>img {
+    height: 45px;
 }
 
 @keyframes aparecer {
