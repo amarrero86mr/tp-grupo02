@@ -99,7 +99,7 @@ color: var(--primary-solid);
 }
 
 .section__artnuevos {
-    margin: 5vw 2vw;
+    margin: 3vw 2vw;
 }
 h2 {
     font-family: var(--title-font);
@@ -109,8 +109,7 @@ h2 {
 }
 
 .glide {
-    height: 430px;
-    margin-bottom: 8vw;
+    margin-bottom: 2vw;
 }
 .glide__track{
     margin: 0 70px;
@@ -123,6 +122,7 @@ h2 {
     font-size: 1.8em;
     padding: 2vw;
     align-items: center;
+    justify-content: space-between;
 }
 .glide__slide>img {
     width: 20vw;
