@@ -57,7 +57,7 @@
                 <h2 class="hero__title title__secondary">Datos de Contacto</h2>
                 <!-- faltan los patterns t los requiereds -->
                 <!-- <form action="https://formspree.io/f/xrgndeyq" method="POST"> -->
-                <form method="POST" class="form__registro">
+                <form method="POST" class="form__registro" id="form">
                     <!-- <fieldset class="form_primerseccion"> -->
                         <div class="form__name">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombres">
@@ -159,7 +159,7 @@
                             
                             <button class="button_borrar" type="reset">BORRAR</button>
                         </div>
-                    <!-- </fieldset> -->
+                        <p class="warnings" id="warnings"></p>
                 </form>
             </section>
 
@@ -179,4 +179,6 @@
             </div>
             <p>Derechos Registrados 2024 - tradición criolla®</p>
         </footer>
+        <script src="../scripts/registro.js"></script>
     </body>
+</html>
