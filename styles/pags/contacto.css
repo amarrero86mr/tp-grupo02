@@ -17,8 +17,9 @@ body {
     text-underline-position: under;
 
 }
-
-p {
+.hero>div>p,
+.textos-contacto>p,
+.contacto>li>p {
     font-family: var(--primary-font);
     font-size: 2.1em;
     font-weight: 500;
