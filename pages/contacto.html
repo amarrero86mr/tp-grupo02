@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | tradicion criolla</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/pags/contacto.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
 </head>
-
 <body class="container">
     <header>
         <nav class="navbar">
@@ -20,17 +18,13 @@
             <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
             <div class="navbar__menu">
                 <label for="check-menu-responsive" class="checkbtn-menu-responsive">
-
-                    <img class="img-menu-responsive" width="45px" src="../imgs/icons/bars-solid.svg"
+                    <img class="img-menu-responsive" src="../imgs/icons/bars-solid.svg"
                         alt="favicon de menu">
-
-                    
-
                 </label>
                 <input hidden type="checkbox" id="check-menu-responsive">
-
                 <ul class="navbar__menu-list">
-                    <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
+                    <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img
+                            src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
                         <ul class="submenu">
                             <li class="submenu__items">
                                 <a href="#" class="submenu__link">Yerbas</a>
@@ -45,18 +39,13 @@
                     </li>
                     <li class="navbar__menu-item"><a href="#">CONTACTO</a></li>
                     <li class="navbar__menu-item"><a href="#">INGRESAR</a></li>
-
-                    <li class="navbar__menu-item"><a href="#"><img width="40px"
-                                src="../imgs/icons/cart-shopping-solid.svg" alt="favicon de carrito de compras"></a>
+                    <li class="navbar__menu-item"><a href="#"><img 
+                        src="../imgs/icons/cart-shopping-solid.svg" alt="favicon de carrito de compras"></a>
                     </li>
-
-                    
-
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
         <!-- section fin semantico para busqueda de google -->
         <section class="hero">
@@ -64,7 +53,7 @@
                 <h2 class="title">CONTACTO</h2>
                 <p>Deja tu comentario o consulta llenando el formulario</p>
             </div>
-            <form>
+            <form id="form_contacto">
                 <div class="form-contact">
                     <div class="form__name">
                         <input type="text" name="nombre" id="nombre" placeholder="nombre">
@@ -78,13 +67,31 @@
                     <div class="form__dato_telefono">
                         <input type="tel" name="telefono" id="telefono" placeholder="telefono">
                     </div>
+                    <div class="form__dato_motcontactarnos">
+                        <p>Motivo de contactarnos:</p>
+                        <div>
+                            <label for="motivo_consulta">
+                                <input type="radio" name="motcontactarnos" id="motivo_consulta" value="1"> Consulta/Otro
+                            </label>
+                            <label for="motivo_proveedor">
+                                <input type="radio" name="motcontactarnos" id="motivo_proveedor" value="2"> Proveerdor
+                            </label>
+                            <label for="motivo_trabajacnos">
+                                <input type="radio" name="motcontactarnos" id="motivo_trabajacnos" value="3"> Trabaja
+                                con
+                                Nosotros
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mot_desplegable" id="mot_desplegable"></div>
+                    <div class="segundo_mot_deplegable" id="segundo_mot_deplegable"></div>
                     <div class="form_mensaje">
-                        <!-- <label for="mensaje"></label> -->
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
                     </div>
                     <div class="button_send">
                         <button type="submit">enviar</button>
                     </div>
+                    <p id="warnings" class="warnings"></p>
                 </div>
             </form>
             <div class="textos-contacto">
@@ -126,11 +133,12 @@
                 <li><a href="../pages/registro.html">REGISTRARSE</a></li>
                 <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
             </ul>
-            <a href="../index.html"><img width="200px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+            <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
                     alt="logo de tradicion criolla"></a>
         </div>
         <p>Derechos Registrados 2024 - tradición criolla®</p>
     </footer>
+    <script src="../scripts/contacto.js"></script>
+    <script src="../scripts/validacion_contacto.js"></script>
 </body>
-
 </html>
