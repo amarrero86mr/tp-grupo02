@@ -9,7 +9,9 @@
 
 .container {
   max-width: 1200px;
+  height: 100%;
   margin: auto;
+  padding: 1rem;
 }
 
 .form-login {
