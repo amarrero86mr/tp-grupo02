@@ -1,4 +1,6 @@
 footer {
+    max-width: 1200px;
+    margin: 0 auto;
     background-image: linear-gradient( var(--green-yerba-solid),  var(--brown-mate-solid));
     display: flex;
     padding: 0 0.8vw ;
