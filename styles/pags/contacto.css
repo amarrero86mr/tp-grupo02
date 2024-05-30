@@ -1,8 +1,3 @@
-:root {
-    --bg-color: #D8DBB5;
-    --bg-button-color: #7ED957;
-}
-
 .container,
 body {
     max-width: 1200px;
@@ -10,15 +5,18 @@ body {
 }
 
 .title {
-    margin: 1.8em;
+    margin: 1.8em;/* cambiar em */
     font-family: var(--title-font);
     font-size: 3em;
     text-decoration: underline 3px var(--primary-solid);
     text-underline-position: under;
-
 }
 
-.hero>div>p {
+
+
+.hero>div>p,
+.textos-contacto>p,
+.contacto>li>p {
     font-family: var(--primary-font);
     font-size: 2.1em;
     font-weight: 500;
@@ -28,13 +26,19 @@ body {
 .form-contact {
     display: grid;
     margin: 2vw;
-    
     grid-template-columns: repeat(2, minmax(0, 500px));
     grid-template-rows: auto auto auto auto;
     gap: 0em 7em;
-    
     justify-content: center;
 }
+
+.form__dato_motcontactarnos>p,
+.form__dato_motcontactarnos>div>label 
+{
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+}
+/* .warnings */
 
 /* Establece el ancho de todos los inputs y textarea al 100% */
 .form-contact input,
@@ -43,19 +47,22 @@ body {
     margin: 10px 0px;
 }
 
-.form-contact > .form_mensaje{
+.form-contact>.form_mensaje {
     grid-column: span 2;
-    grid-row: 3; /*ubicamos en la 3era fila*/
+    grid-row: 6;
+    /*ubicamos en la 3era fila*/
 }
 
-input,button{
+input,
+button {
     height: 38px;
 }
 
 /* Estilos para los inputs */
 input,
-textarea {
-    background-color: var(--bg-color);
+textarea,
+select {
+    background-color: var(--form-back);
     padding: 5px 10px;
     border: 1px solid;
     border-radius: 10px;
@@ -71,7 +78,7 @@ textarea {
 }
 
 button {
-    background-color: var(--bg-button-color);
+    background-color: var(--secondary-solid);
     border: 0px;
     border-radius: 17px;
     width: 130px;
@@ -80,15 +87,72 @@ button {
     text-transform: uppercase;
 }
 
-.button_send{
+.button_send {
     /* Alinea el botón al final de la columna */
     grid-column: 2;
+    grid-row: 7;
     justify-self: end;
 }
 
+.contacto>li {
+    display: flex;
+}
+
+.contacto>li>img {
+    width: 4em;
+}
+
+.section__redes {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.form__dato_motcontactarnos {
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.form__dato_motcontactarnos>div {
+    display: flex;
+    justify-content: center;
+}
+
+.form__dato_motcontactarnos>div>label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    margin: 0 4vw;
+}
+
+.form__dato_motcontactarnos>div>label>input {
+    width: 30px;
+}
+
+.mot_desplegable {
+    grid-column: span 2;
+    grid-row: 4;
+    width: 40%;
+    margin: 1vw auto;
+}
+
+.segundo_mot_deplegable {
+    grid-column: span 2;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+}
+
+.warnings {
+    grid-column: 1;
+    grid-row: 7;
+    color: rgb(255, 57, 57);
+}
 
 @media(width < 480px) {
     .form-contact {
-        flex-direction: row-gap;
+        display: flex;
+        flex-direction: column;
     }
 }

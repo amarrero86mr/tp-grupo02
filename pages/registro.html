@@ -14,21 +14,19 @@
         <header>
             <nav class="navbar">
                 <div class="navbar__logo">
-                    <a href="../index.html"><img width="150px"
-                            src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                    <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
                             alt="Logo de Tradición Criolla"></a>
                 </div>
                 <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
                 <div class="navbar__menu">
                     <label for="check-menu-responsive" class="checkbtn-menu-responsive">
-                        <img class="img-menu-responsive" width="45px" src="../imgs/icons/bars-solid.svg"
+                        <img class="img-menu-responsive" src="../imgs/icons/bars-solid.svg"
                             alt="favicon de menu">
                     </label>
                     <input hidden type="checkbox" id="check-menu-responsive">
 
                     <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img width="20px"
-                                src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
+                        <li class="navbar__menu-item con__submenu"><a href="#">MERCADO</a> <img src="../imgs/icons/chevron-down-solid.svg" alt="icono de flecha abajo">
                             <ul class="submenu">
                                 <li class="submenu__items">
                                     <a href="#" class="submenu__link">Yerbas</a>
@@ -43,8 +41,7 @@
                         </li>
                         <li class="navbar__menu-item"><a href="./contacto.html">CONTACTO</a></li>
                         <li class="navbar__menu-item"><a href="./login.html">INGRESAR</a></li>
-                        <li class="navbar__menu-item"><a href="./cart.html"><img width="40px"
-                                    src="../imgs/icons/cart-shopping-solid.svg" alt="favicon de carrito de compras"></a>
+                        <li class="navbar__menu-item"><a href="./cart.html"><img src="../imgs/icons/cart-shopping-solid.svg" alt="favicon de carrito de compras"></a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +57,7 @@
                 <h2 class="hero__title title__secondary">Datos de Contacto</h2>
                 <!-- faltan los patterns t los requiereds -->
                 <!-- <form action="https://formspree.io/f/xrgndeyq" method="POST"> -->
-                <form action="" method="POST" class="form__registro">
+                <form method="POST" class="form__registro" id="form">
                     <!-- <fieldset class="form_primerseccion"> -->
                         <div class="form__name">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombres">
@@ -162,7 +159,7 @@
                             
                             <button class="button_borrar" type="reset">BORRAR</button>
                         </div>
-                    <!-- </fieldset> -->
+                        <p class="warnings" id="warnings"></p>
                 </form>
             </section>
 
@@ -177,9 +174,11 @@
                     <li><a href="../pages/registro.html">REGISTRARSE</a></li>
                     <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
                 </ul>
-                <a href="../index.html"><img width="200px" src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
                         alt="logo de tradicion criolla"></a>
             </div>
             <p>Derechos Registrados 2024 - tradición criolla®</p>
         </footer>
+        <script src="../scripts/registro.js"></script>
     </body>
+</html>

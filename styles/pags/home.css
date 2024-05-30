@@ -99,9 +99,9 @@ color: var(--primary-solid);
 }
 
 .section__artnuevos {
-    margin: 5vw 2vw;
+    margin: 3vw 2vw;
 }
-.section__artnuevos>h2 {
+h2 {
     font-family: var(--title-font);
     font-size: 5em;
     color: var(--primary-solid);
@@ -109,8 +109,7 @@ color: var(--primary-solid);
 }
 
 .glide {
-    height: 430px;
-    margin-bottom: 8vw;
+    margin-bottom: 2vw;
 }
 .glide__track{
     margin: 0 70px;
@@ -123,6 +122,7 @@ color: var(--primary-solid);
     font-size: 1.8em;
     padding: 2vw;
     align-items: center;
+    justify-content: space-between;
 }
 .glide__slide>img {
     width: 20vw;
