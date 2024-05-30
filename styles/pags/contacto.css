@@ -11,6 +11,9 @@ body {
     text-decoration: underline 3px var(--primary-solid);
     text-underline-position: under;
 }
+
+
+
 .hero>div>p,
 .textos-contacto>p,
 .contacto>li>p {
@@ -23,13 +26,19 @@ body {
 .form-contact {
     display: grid;
     margin: 2vw;
-
     grid-template-columns: repeat(2, minmax(0, 500px));
     grid-template-rows: auto auto auto auto;
     gap: 0em 7em;
-
     justify-content: center;
 }
+
+.form__dato_motcontactarnos>p,
+.form__dato_motcontactarnos>div>label 
+{
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+}
+/* .warnings */
 
 /* Establece el ancho de todos los inputs y textarea al 100% */
 .form-contact input,
@@ -94,7 +103,6 @@ button {
 }
 
 .section__redes {
-
     display: flex;
     justify-content: center;
     gap: 3em;
@@ -127,7 +135,6 @@ button {
     grid-row: 4;
     width: 40%;
     margin: 1vw auto;
-
 }
 
 .segundo_mot_deplegable {
