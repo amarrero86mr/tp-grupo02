@@ -16,3 +16,5 @@
 
 @import url(./part/header.css);
 @import url(./part/footer.css);
+@import url(./part/normalize.css);
+@import url(./part/form.css);
