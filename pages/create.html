@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NUEVO | tradicion criolla</title>
         <link rel="stylesheet" href="../styles/index.css">
-        <link rel="stylesheet" href="../styles/pags/registro.css">
+        <link rel="stylesheet" href="../styles/pags/create.css">
         <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
     </head>
 
@@ -39,16 +39,16 @@
             <section class="hero">
                 <h1 class="hero__title">NUEVO PRODUCTO</h1>
                 <!-- <form action="https://formspree.io/f/xrgndeyq" method="POST"> -->
-                <form class="form__registro" id="form">
+                <form class="form" id="form_create">
                     <!-- <fieldset class="form_primerseccion"> -->
-                        <div class="form__name">
+                        <div class="nombre_prod">
                             <input type="text" name="nombre_producto" id="nombre_prod" placeholder="Nombre del Producto">
                         </div>
-                         <div class="form__apellido"> <!-- cambiar clase -->
-                            <input type="text" name="marca_producto" id="marca_producto" placeholder="Marca">
+                         <div class="marca_prod">
+                            <input type="text" name="marca_producto" id="marca_prod" placeholder="Marca">
                         </div>
-                        <div class="form__tipodocumento"> <!-- cambiar clases -->
-                            <select name="tipo_documento" id="tipo_documento-select">
+                        <div class="tipo_prod">
+                            <select name="tipo_producto" id="tipo_prod">
                                 <option value="" selected="" disabled="">Categoría</option>
                                 <option value="accesorio">Accesirio</option>
                                 <option value="bolso">Bolso</option>
@@ -57,18 +57,18 @@
                                 <option value="yerba">Yerba</option>
                             </select>
                         </div>
-                        <div class="form_mensaje"> <!-- cambiar clases -->
-                            <textarea name="descripcion" id="descripcion_prod" cols="30" rows="10" placeholder="Descripción del Producto"></textarea>
+                        <div class="descripcion_prod"> 
+                            <textarea name="descripcion" id="descripcion_prod" cols="30" rows="6" placeholder="Descripción del Producto"></textarea>
                         </div>
 
-                        <div class="form_ciudad">  <!-- cambiar clases -->
+                        <div class="codigo_prod"> 
                             <input type="text" name="codigo" id="codigo_prod" placeholder="Código">
                         </div>
-                        <div class="form__calle">  <!-- cambiar clases -->
+                        <div class="stock_prod">  
                             <input type="number" name="stock" id="stock_prod" placeholder="Stock">
                         </div>
 
-                        <div class="form__tipodocumento"> <!-- cambiar clases -->
+                        <div class="promocion_prod">
                             <select name="promocion" id="promocion_prod">
                                 <option value="" selected="" disabled="">Promocion / NUEVO</option>
                                 <option value="nuevo">Nuevo</option>
@@ -77,22 +77,22 @@
                                 <option value="promo3">25% de Descuento</option>
                                 <option value="promo4">30% de Descuento</option>
                             </select>
+                        </div>
 
-
-                        <div class="form__depto"> <!-- cambiar clases -->
+                        <div class="precio_prod"> <!-- cambiar clases -->
                             <input type="number" name="precio" min="0" id="precio_prod" placeholder="Precio">
                         </div>
-                        <div>
-                            <label for="imagenes">imagenes:
-                                <input type="file" accept=".png,.jpg">
+                        <div class="subir_imgprod">
+                            <label for="subir_imgprod">IMAGENES:
                             </label>
+                                <input type="file" id="subir_imgprod" accept=".png,.jpg">
                         </div>
                         <div class="producto_img">
 
                         </div>
 
 
-                        <div class="button__section"> <!-- cambiar clases -->
+                        <div class="button__section">
                             <button class="button_send" type="submit">AGREGAR</button>
                             
                             <button class="button_borrar" type="reset">LIMPIAR</button>
