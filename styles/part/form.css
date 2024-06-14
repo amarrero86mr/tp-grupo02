@@ -73,6 +73,14 @@ button:hover {
     color: var(--form-back);
 }
 
+.button_borrar{
+    background-color: #FF3131;
+    color: var(--form-back);
+}
+.button_borrar:hover {
+    background-color: #520303;
+    color: var(--form-back);
+}
 .form_radiothree>div {
     display: flex;
     justify-content: center;

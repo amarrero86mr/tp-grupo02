@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NUEVO | tradicion criolla</title>
         <link rel="stylesheet" href="../styles/index.css">
-        <link rel="stylesheet" href="../styles/pags/registro.css">
+        <link rel="stylesheet" href="../styles/pags/create.css">
+        <link rel="stylesheet" href="../styles/pags/edit.css">
         <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
     </head>
 
@@ -39,15 +40,15 @@
             <section class="hero">
                 <h1 class="hero__title">EDITAR PRODUCTO</h1>
                 <!-- <form action="https://formspree.io/f/xrgndeyq" method="PUT"> --> <!-- cambiar clase -->
-                <form class="form__registro" id="form_edit">
-                        <div class="form__name">
+                <form class="form" id="form_edit">
+                        <div class="nombre_prod">
                             <input type="text" name="nombre_producto" id="nombre_prod" placeholder="Canarias Serena - 1kg">
                         </div>
-                         <div class="form__apellido"> <!-- cambiar clase -->
+                         <div class="marca_prod"> 
                             <input type="text" name="marca_producto" id="marca_producto" placeholder="Canarias">
                         </div>
-                        <div class="form__tipodocumento"> <!-- cambiar clases -->
-                            <select name="tipo_documento" id="tipo_documento-select">
+                        <div class="tipo_prod"> <!-- cambiar clases -->
+                            <select name="tipo_producto" id="tipo_prod">
                                 <option value="" selected="" disabled="">Categoría</option>
                                 <option value="accesorio">Accesirio</option>
                                 <option value="bolso">Bolso</option>
@@ -56,20 +57,20 @@
                                 <option value="yerba">Yerba</option>
                             </select>
                         </div>
-                        <div class="form_mensaje"> <!-- cambiar clases -->
-                            <textarea name="descripcion" id="descripcion_prod" cols="30" rows="10" placeholder="Yerba mate que combina la calidad única de la yerba Canarias con un equilibrio de hierbas: Toronjil, Mburucuyá, Menta y Tilo. Paquete por 1 kg."></textarea>
+                        <div class="descripcion_prod">
+                            <textarea name="descripcion" id="descripcion_prod" cols="30" rows="6" placeholder="Yerba mate que combina la calidad única de la yerba Canarias con un equilibrio de hierbas: Toronjil, Mburucuyá, Menta y Tilo. Paquete por 1 kg."></textarea>
                         </div>
 
-                        <div class="form_ciudad">  <!-- cambiar clases -->
+                        <div class="codigo_prod"> 
                             <label for="codigo_prod">CODIGO:</label>
                             <input type="text" name="codigo" id="codigo_prod" placeholder="YMC0102">
                         </div>
-                        <div class="form__calle">  <!-- cambiar clases -->
+                        <div class="stock_prod"> 
                             <label for="stock_prod">STOCK:</label>
                             <input type="number" name="stock" id="stock_prod" placeholder="">
                         </div>
 
-                        <div class="form__tipodocumento"> <!-- cambiar clases -->
+                        <div class="promocion_prod"> 
                             <label for="promocion_prod">PROMOCION:</label>
                             <select name="promocion" id="promocion_prod">
                                 <option value="" selected="" disabled="">Promocion / NUEVO</option>
@@ -79,9 +80,9 @@
                                 <option value="promo3">25% de Descuento</option>
                                 <option value="promo4">30% de Descuento</option>
                             </select>
+                        </div>
 
-
-                        <div class="form__depto"> <!-- cambiar clases -->
+                        <div class="precio_prod"> <!-- cambiar clases -->
                             <label for="precio_prod">PRECIO:</label>
                             <input type="number" name="precio" min="0" id="precio_prod" placeholder="Precio">
                         </div>
@@ -96,14 +97,14 @@
                         </div>
 
 
-                        <div>
-                            <label for="imagenes_prod">IMAGENES:
+                        <div class="subir_imgprod">
+                            <label for="subir_imgprod">IMAGENES:
                             </label>
-                            <input type="file" id="imagenes_prod" accept=".png,.jpg">
+                            <input type="file" id="subir_imgprod" accept=".png,.jpg">
                         </div>
 
 
-                        <div class="button__section"> <!-- cambiar clases -->
+                        <div class="button__section">
                             <button class="button_send" type="submit">EDITAR</button>
                             
                             <button class="button_borrar" type="reset">CANCELAR</button> <!-- metodo GET a ADMIN -->
