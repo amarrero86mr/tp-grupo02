@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADMIN | tradicion criolla</title>
-    <link rel="stylesheet" href="../styles/index.css">
-    <!-- <link rel="stylesheet" href="../styles/pags/contacto.css"> -->
-    <!-- <link rel="stylesheet" href="../styles/pags/mercado.css"> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
-</head>
-<body class="container">
-    <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
-                        alt="Logo de Tradición Criolla"></a>
-            </div>
-            <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
-            <div class="navbar__menu">
-                <label for="check-menu-responsive" class="checkbtn-menu-responsive">
-                    <img class="img-menu-responsive" src="../imgs/icons/bars-solid.svg"
-                        alt="favicon de menu">
-                </label>
-                <input hidden type="checkbox" id="check-menu-responsive">
-                <ul class="navbar__menu-list">
-                    <li class="navbar__menu-item con__submenu"><a href="../pages/mercado.html">MERCADO</a></li>
-                    <li class="navbar__menu-item"><a href="../pages/admin.html">ADMIN</a></li>
-                    <li class="navbar__menu-item"><a href="#">PEDIDOS</a></li>
-                    <li class="navbar__menu-item"><a href="#">SALIR</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- section fin semantico para busqueda de google -->
-        <section class="hero">
-            <div>
-                <h2 class="title">LISTADO DE PRODUCTOS</h2>
-            </div>
-            <div class="hero_search">
-                <input id="search" type="search" placeholder="Código,Nombre, Tipo">
-                <button id="button_search"><img src="../imgs/icons/magnifying-glass-solid.svg"
-                    alt="icono de buscador"></button>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADMIN | tradicion criolla</title>
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/pags/admin.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
+    </head>
+
+    <body class="container">
+        <header>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                            alt="Logo de Tradición Criolla"></a>
                 </div>
-              </div>
+                <!-- el siguiente div esta oculto para hacerlo visible en la etapa responsive -->
+                <div class="navbar__menu">
+                    <label for="check-menu-responsive" class="checkbtn-menu-responsive">
+                        <img class="img-menu-responsive" src="../imgs/icons/bars-solid.svg" alt="favicon de menu">
+                    </label>
+                    <input hidden type="checkbox" id="check-menu-responsive">
+                    <ul class="navbar__menu-list">
+                        <li class="navbar__menu-item con__submenu"><a href="../pages/mercado.html">MERCADO</a></li>
+                        <li class="navbar__menu-item"><a href="../pages/admin.html">ADMIN</a></li>
+                        <li class="navbar__menu-item"><a href="#">PEDIDOS</a></li>
+                        <li class="navbar__menu-item"><a href="#">SALIR</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- section fin semantico para busqueda de google -->
+            <section class="hero">
+                <div>
+                    <h2 class="hero__title">LISTADO DE PRODUCTOS</h2>
+                </div>
+                <div class="hero_search">
+                    <input class="search" id="search" type="search" placeholder="Código, Nombre, Categoría">
+                    <a class="button_search" id="button_search"><img src="../imgs/icons/magnifying-glass-solid.svg"
+                            alt="icono de buscador"></a>
+                </div>
+
             </section>
-        <!-- los datos cargados son de vista, luego seran traidos desde BBDD -->
+            <!-- los datos cargados son de vista, luego seran traidos desde BBDD -->
             <div>
                 <table>
                     <thead>
                         <th>ID</th>
                         <th>CODIGO</th>
                         <th>NOMBRE</th>
-                        <th>TIPO</th>
+                        <th>CATEGORIA</th>
                         <th>MARCA</th>
                         <th>STOCK</th>
                         <th>PRECIO</th>
-                        <th><a href="../pages/create.html">Agregar <img src="../imgs/icons/circle-plus-solid.svg" alt=""></a></th>
+                        <th><a href="../pages/create.html">Agregar<img src="../imgs/icons/circle-plus-solid.svg"
+                                    alt=""></a></th>
                     </thead>
                     <tbody>
                         <tr>
@@ -68,8 +69,10 @@
                             <td>AMANDA</td>
                             <td>54</td>
                             <td>3200,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -80,8 +83,10 @@
                             <td>AMANDA</td>
                             <td>44</td>
                             <td>3600,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -92,8 +97,10 @@
                             <td>CANARIAS</td>
                             <td>60</td>
                             <td>6600,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -104,8 +111,10 @@
                             <td>CANARIAS</td>
                             <td>40</td>
                             <td>6900,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -116,8 +125,10 @@
                             <td>PIPORE</td>
                             <td>73</td>
                             <td>5400,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -128,8 +139,10 @@
                             <td>PIPORE</td>
                             <td>58</td>
                             <td>5600,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                         <tr>
@@ -140,29 +153,30 @@
                             <td>MATESUR</td>
                             <td>25</td>
                             <td>8700,00</td>
-                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg" alt="icono de lapis para editar"></a>
-                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg" alt="icono de tacho de basura para delete"></a>
+                            <td><a href="../pages/edit.html"><img src="../imgs/icons/pen-to-square-solid.svg"
+                                        alt="icono de lapis para editar"></a>
+                                <a href="#"><img src="../imgs/icons/trash-can-solid.svg"
+                                        alt="icono de tacho de basura para delete"></a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            
-        </section>
-    </main>
-    <footer>
-        <div>
-            <ul>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                <li><a href="../pages/mercado.html">MERCADO</a></li>
-                <li><a href="../pages/registro.html">REGISTRARSE</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-            </ul>
-            <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
-                    alt="logo de tradicion criolla"></a>
-        </div>
-        <p>Derechos Registrados 2024 - tradición criolla®</p>
-    </footer>
-    <script src="../scripts/mercado.js"></script>
-</body>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="../pages/mercado.html">MERCADO</a></li>
+                    <li><a href="../pages/registro.html">REGISTRARSE</a></li>
+                    <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                </ul>
+                <a href="../index.html"><img src="../imgs/logo/Designer__6_-derecho-removebg-preview.png"
+                        alt="logo de tradicion criolla"></a>
+            </div>
+            <p>Derechos Registrados 2024 - tradición criolla®</p>
+        </footer>
+        <script src="../scripts/mercado.js"></script>
+    </body>
+
 </html>
