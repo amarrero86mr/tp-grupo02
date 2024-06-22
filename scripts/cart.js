@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         item.eliminar_item.addEventListener('click', function(e) {
             if (e) {
                 item.card_item.innerHTML = '';
+                item.card_item.removeAttribute('class');
                 item.cant_items = 0;
                 mostrarCant(item);
                 calcularTotales();
